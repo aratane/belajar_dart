@@ -142,6 +142,8 @@ void main() {
 
   ibukota['New Delhi']= 'India';
   print(ibukota);
+
+  var ihsan = 20;
    */
 }
 
