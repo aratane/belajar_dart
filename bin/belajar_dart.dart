@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'Cat.dart';
 
 void main() {
   /*
@@ -144,14 +145,27 @@ void main() {
   print(ibukota);
 
   var ihsan = 20;
-   */
 
   var dicodingCat = Animal('Gray', 2, 4.2);
   dicodingCat.eat();
   dicodingCat.poop();
   print(dicodingCat.weight);
-}
 
+   */
+
+  /* Cascade Notation
+  Animal('', 2, 4.2);
+  ..name = 'Gray';
+  ..eat();
+  */
+
+  var dicodingCat = Cat('Grayson', 2, 2.2, 'Gray');
+  dicodingCat.walk();
+  dicodingCat.eat();
+  print(dicodingCat.weight);
+
+}
+/*
 class Animal {
   String name;
   int age;
@@ -173,5 +187,7 @@ class Animal {
     weight = weight - 0.1;
   }
 }
+
+ */
 
 
